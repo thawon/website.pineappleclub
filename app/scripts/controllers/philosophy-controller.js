@@ -1,12 +1,12 @@
 ﻿define(
-    ["app", "controllers/contact-controller"],
+    ["app"],
     function (app) {
         "use strict";
 
-        app.controller("HomeController",
+        app.controller("PhilosophyController",
             ["$scope",
             function ($scope) {
-                
+
             }
         ]);
     });

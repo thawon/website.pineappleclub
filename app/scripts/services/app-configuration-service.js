@@ -8,12 +8,12 @@
                 configuration.project = {
                     name: "Pineapple Club Website"
                 };
-
+                
                 configuration.companyInfo = {
-                    name: "Pineapple Club",
+                    name: "Pineapple Club Family Day Care",
                     location: {
-                        lat: -33.947152,
-                        lng: 151.129254
+                        lat: -33.945967,
+                        lng: 151.137092
                     },
                     contact: {
                         phone: "(02) 8041 8101",
