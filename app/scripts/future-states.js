@@ -10,7 +10,12 @@
                 controllerPath: "controllers/home-controller",
                 controllerName: "HomeController",
                 data: {
-                    authorizedRoles: [USER_ROLES.all]
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Child Care Service",
+                        description: "We provide high quality child care service supported by Integricare." +
+                                        "The service is operated by experienced diploma qualification educator."
+                    }
                 }
             },
             {
@@ -21,7 +26,11 @@
                 controllerPath: "controllers/contact-controller",
                 controllerName: "ContactController",
                 data: {
-                    authorizedRoles: [USER_ROLES.all]
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Near Rockdale and Banksia train station",
+                        description: "Our location is near Rockdale and Banksia train station."
+                    }
                 }
             },
             {
@@ -32,7 +41,11 @@
                 controllerPath: "controllers/services-controller",
                 controllerName: "ServicesController",
                 data: {
-                    authorizedRoles: [USER_ROLES.all]
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Family Day Care, Before/After school care, Vocation care",
+                        description: "We provide Family Day Care, Before/After school care and Vocation care."
+                    }
                 }
             },
             {
@@ -43,7 +56,11 @@
                 controllerPath: "controllers/philosophy-controller",
                 controllerName: "PhilosophyController",
                 data: {
-                    authorizedRoles: [USER_ROLES.all]
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Unlocking child's full potential",
+                        description: "We believe early learning is the key to unlocking a child's full potential."
+                    }
                 }
             },
             {
@@ -54,7 +71,11 @@
                 controllerPath: "controllers/photos-controller",
                 controllerName: "PhotosController",
                 data: {
-                    authorizedRoles: [USER_ROLES.all]
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Playroom, Creative corner, Art and craft and outside playground",
+                        description: "Our facilities are Playroom, Creative corner, Art and craft and outside playground."
+                    }
                 }
             }
 

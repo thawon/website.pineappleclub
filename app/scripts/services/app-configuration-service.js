@@ -8,6 +8,10 @@
                 configuration.project = {
                     name: "Pineapple Club Website"
                 };
+
+                configuration.page = {
+                    titlePrefix: "Pineapple Club"
+                };
                 
                 configuration.companyInfo = {
                     name: "Pineapple Club Family Day Care",
