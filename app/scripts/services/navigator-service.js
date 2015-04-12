@@ -19,7 +19,7 @@
                         items: [
                             items.home,
                             items.services,
-                            //items.photos,
+                            items.photos,
                             items.philosophy,
                             items.contact
                         ]

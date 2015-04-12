@@ -20,7 +20,7 @@ footer {
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
-    z-index: 1000;
+    z-index: 900;
     -webkit-transition: all .25s ease-out;
          -o-transition: all .25s ease-out;
             transition: all .25s ease-out;
