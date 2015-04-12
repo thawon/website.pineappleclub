@@ -12,7 +12,9 @@
                 configuration.page = {
                     titlePrefix: "Pineapple Club"
                 };
-                
+
+                configuration.googlePlusUserId = "102015599606810374225";
+
                 configuration.companyInfo = {
                     name: "Pineapple Club Family Day Care",
                     location: {

@@ -11,6 +11,7 @@ require.config({
         jquery: "vendors/jquery",
         underscore: "vendors/underscore-min",
         bootstrap: "vendors/bootstrap.min",
+        plusgallery: "vendors/plusgallery",
         async: "vendors/async",
 
         sharedLib: "../../shared-lib",
@@ -41,6 +42,9 @@ require.config({
             exports: "angular"
         },
         bootstrap: {
+            deps: ["jquery"]
+        },
+        plusgallery: {
             deps: ["jquery"]
         },
         underscore: {

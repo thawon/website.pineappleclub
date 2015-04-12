@@ -1,12 +1,12 @@
 ﻿define(
-    ["app"],
+    ["app", "services/app-configuration-service", "directives/plus-gallery-directive"],
     function (app) {
         "use strict";
 
         app.controller("PhotosController",
-            ["$scope",
-            function ($scope) {
-
+            ["$scope", "AppConfigurationService",
+            function ($scope, AppConfigurationService) {
+                $scope.userId = AppConfigurationService.googlePlusUserId;
             }
         ]);
     });
