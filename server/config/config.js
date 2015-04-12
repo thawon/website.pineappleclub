@@ -30,14 +30,14 @@
 
         var mongoUrl = (!process.env.NODE_ENV)
                         // development connection string
-                        ? "mongodb://localhost:27017/console"
+                        ? "mongodb://localhost:27017/pineappleclub"
                         // production connection string
                         : "mongodb://console:zzKBugqlYUaCJRsRP9b.KzkxAxWuQJ_DyCClmRKoUmI-@ds041167.mongolab.com:41167/console";
 
         console.log("mongo url: " + mongoUrl);
 
         config.db = {
-            database: "console",
+            database: "pineappleclub",
             url: mongoUrl
         };
 

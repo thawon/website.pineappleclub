@@ -3,7 +3,7 @@
     function (app, util, DEVICE_SIZES) {
         "use strict";
 
-        app.controller("HeaderController",
+        app.controller("HeaderClientController",
             ["$scope", "$timeout", "ExportService",
             function ($scope, $timeout, exports) {
                 $scope.configs = {

@@ -11,8 +11,12 @@ requirejs.config({
 
         config: "server/config",
 
+        models: "server/models",
+
         routes: "server/routes",
-        
+
+        authentication: "server/authentication",
+
         sharedLib: "shared-lib",
 
         constants: "shared-lib/constants"

@@ -77,7 +77,49 @@
                         description: "Our facilities are Playroom, Creative corner, Art and craft and outside playground."
                     }
                 }
+            },
+            {
+                stateName: "login",
+                urlPrefix: "/login",
+                templateUrl: "views/auth/login.html",
+                type: "requireCtrl",
+                controllerPath: "controllers/auth/login-controller",
+                controllerName: "LoginController",
+                data: {
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Login",
+                        description: "admin user authentication"
+                    }
+                }
+            },
+            {
+                stateName: "signout",
+                urlPrefix: "/signout",
+                templateUrl: "views/auth/signout.html",
+                type: "requireCtrl",
+                data: {
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Sign out",
+                        description: "admin user sign out"
+                    }
+                }
+            },
+            {
+                stateName: "dashboard",
+                urlPrefix: "/dashboard",
+                templateUrl: "views/dashboard.html",
+                type: "requireCtrl",
+                controllerPath: "controllers/dashboard-controller",
+                controllerName: "DashboardController",
+                data: {
+                    authorizedRoles: [USER_ROLES.admin],
+                    page: {
+                        title: "Admin Dashboard",
+                        description: ""
+                    }
+                }
             }
-
         ];
     });
