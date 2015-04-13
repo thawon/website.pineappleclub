@@ -120,6 +120,21 @@
                         description: ""
                     }
                 }
+            },
+            {
+                stateName: "signup",
+                urlPrefix: "/signup",
+                templateUrl: "views/signup.html",
+                type: "requireCtrl",
+                controllerPath: "controllers/signup-controller",
+                controllerName: "SignupController",
+                data: {
+                    authorizedRoles: [USER_ROLES.all],
+                    page: {
+                        title: "Signup",
+                        description: ""
+                    }
+                }
             }
         ];
     });

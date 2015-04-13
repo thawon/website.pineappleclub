@@ -32,7 +32,7 @@
                         // development connection string
                         ? "mongodb://localhost:27017/pineappleclub"
                         // production connection string
-                        : "mongodb://console:zzKBugqlYUaCJRsRP9b.KzkxAxWuQJ_DyCClmRKoUmI-@ds041167.mongolab.com:41167/console";
+                        : "mongodb://pineappleclub:CB_FhmudQikwCHn6eK.e3NShH6dvjC_gCpbIMllNJBw-@ds060977.mongolab.com:60977/pineappleclub";
 
         console.log("mongo url: " + mongoUrl);
 

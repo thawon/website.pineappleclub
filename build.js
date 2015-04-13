@@ -9,7 +9,8 @@
         "controllers/photos-controller",
         "controllers/services-controller",
         "controllers/dashboard-controller",
-        "controllers/auth/login-controller"
+        "controllers/auth/login-controller",
+        "controllers/signup-controller"
     ],
     out: "./app/scripts/optimized.js",
     uglify: {
