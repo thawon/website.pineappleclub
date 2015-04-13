@@ -1,6 +1,6 @@
 doctype html
 
-html(lang="en", ng-controller="ApplicationController")
+html(lang="en", ng-controller="PageController")
   head
     base(href="/")
     title(ng-bind="getTitle()")
@@ -12,13 +12,13 @@ html(lang="en", ng-controller="ApplicationController")
     link(rel='stylesheet', href='styles/offcanvas.css')
     link(rel='stylesheet', href='styles/ngProgress.css')
     link(rel='stylesheet', href='styles/plusgallery.css')
-  body
+  body(ng-controller="ApplicationController")
     div.container      
       div.row.row-offcanvas.row-offcanvas-right        
         div.col-xs-12.col-sm-12          
           div(ng-include="'/views/navigator.html'")
-          div(ng-include="'/views/header-client.html'")
           div(ng-include="'/views/header-admin.html'")
+          div(ng-include="'/views/header-client.html'")          
           div(ui-view)          
         div(ng-include="'/views/side-bar.html'")
       div(ng-include="'/views/footer.html'")

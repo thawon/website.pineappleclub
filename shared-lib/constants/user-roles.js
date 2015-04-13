@@ -5,6 +5,7 @@
 
         USER_ROLES.set("constants.userRoles",
         {
+            admin: "admin",
             all: "*"
         });
 

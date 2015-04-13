@@ -13,11 +13,6 @@
             });
 
             $rootScope.$on("$stateChangeSuccess", function (event, next) {
-
-                // setting up page info for search engine optimisation
-                PageService.setTitle(AppConfigurationService.page.titlePrefix + " - " + next.data.page.title);
-                PageService.setDescription(next.data.page.description);
-
                 ngProgress.complete();
             });
         } ]);

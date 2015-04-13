@@ -1,7 +1,7 @@
 <!-- hd = header -->
-<div ng-controller="HeaderClientController">
+<div ng-controller="HeaderClientController" ng-show="isShown">
     <!-- TODO: do not display header carousel image when it is an admin user -->
-    <div ng-if="currentUser.userRole !== 'admin'" class="carousel slide" data-ride="carousel">    
+    <div class="carousel slide" data-ride="carousel">    
         <div class="carousel-inner">
             <div class="item active">
                 <img id="hd_banner_img" ng-src="{{banner}}" alt="tree">

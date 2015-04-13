@@ -6,6 +6,7 @@
      "controllers/header-client-controller",
      "controllers/header-admin-controller",
      "controllers/footer-controller",
+     "controllers/page-controller",
      "controllers/side-bar-controller",
      "directives/active-by-state-directive",
      "run",

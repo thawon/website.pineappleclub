@@ -1,10 +1,10 @@
 ﻿define(
-        ["app"],
-        function (app) {
-            app.factory("PageService", [
-                function () {                   
-                    var title = "default title",
-                        descripiton = "default description",
+        ["app", "constants/string", "services/app-configuration-service"],
+        function (app, STRING) {
+            app.factory("PageService", ["AppConfigurationService",
+                function (AppConfigurationService) {
+                    var title = AppConfigurationService.companyInfo.name,
+                        descripiton = STRING.empty,
                         page = {
                             getTitle: function () {
                                 return title;

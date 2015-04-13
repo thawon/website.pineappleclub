@@ -1,20 +1,16 @@
 ﻿define(
-    ["app", "services/auth-service", "services/app-configuration-service", "services/page-service"],
+    ["app", "services/auth-service", "services/app-configuration-service"],
     function (app) {
         "use strict";
 
         app.controller("ApplicationController",
-            ["$scope", "ngProgress", "AuthService", "AppConfigurationService", "PageService",
-            function ($scope, ngProgress, AuthService, AppConfigurationService, PageService) {
+            ["$scope", "ngProgress", "AuthService", "AppConfigurationService",
+            function ($scope, ngProgress, AuthService, AppConfigurationService) {
 
                 $scope.setCurrentUser = function (user) {
                     $scope.currentUser = user;
                 }
-
-                // set page title
-                $scope.getTitle = PageService.getTitle;
-                $scope.getDescription = PageService.getDescription;
-
+                
                 // setting progress bar color
                 ngProgress.color(AppConfigurationService.progress.color);
 
