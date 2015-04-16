@@ -7,9 +7,9 @@
         router.get("*", function (req, res) {
             var page = { environmentScript: "scripts/optimized" };
             
-            //if (!process.env.NODE_ENV) {
-            //    page.environmentScript = "scripts/main";
-            //}
+            if (!process.env.NODE_ENV) {
+                page.environmentScript = "scripts/main";
+            }
 
             res.render("index", { page: page });
         });

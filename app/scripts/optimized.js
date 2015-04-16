@@ -10828,7 +10828,7 @@
         }, e.page = {
             titlePrefix: "Pineapple Club"
         }, e.googlePlusUserId = "102015599606810374225", e.companyInfo = {
-            name: "Pineapple Club",
+            name: "Pineapple Club Family Day Care",
             location: {
                 lat: -33.945967,
                 lng: 151.137092

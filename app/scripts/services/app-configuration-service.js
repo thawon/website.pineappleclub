@@ -16,7 +16,7 @@
                 configuration.googlePlusUserId = "102015599606810374225";
 
                 configuration.companyInfo = {
-                    name: "Pineapple Club",
+                    name: "Pineapple Club Family Day Care",
                     location: {
                         lat: -33.945967,
                         lng: 151.137092
