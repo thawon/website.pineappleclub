@@ -10,6 +10,12 @@ module.exports = function (grunt) {
                     node_env: undefined,
                     debug: true
                 }
+            },
+            test: {
+                options: {
+                    script: "server.js",
+                    node_env: undefined
+                }
             }
         },
         watch: {
@@ -60,6 +66,24 @@ module.exports = function (grunt) {
                 singleRun: true
             }
         },
+        protractor_webdriver: {
+            options: {
+                // Task-specific options go here.
+            },
+            your_target: {
+                options: {
+                    command: "webdriver-manager start",
+                    keepAlive: true
+                }
+            }
+        },
+        protractor: {
+            options: {
+                configFile: "test/protractor.conf.js",
+                keepAlive: true
+            },
+            run: {}
+        },
         requirejs: {
             prod: {
                 options: {
@@ -68,8 +92,12 @@ module.exports = function (grunt) {
                     name: "main",
                     include: [
                         "controllers/home-controller",
-                        "controllers/profile-controller",
-                        "controllers/auth/login-controller"
+                        "controllers/philosophy-controller",
+                        "controllers/photos-controller",
+                        "controllers/services-controller",
+                        "controllers/dashboard-controller",
+                        "controllers/auth/login-controller",
+                        "controllers/signup-controller"
                     ],
                     out: "./app/scripts/optimized.js",
                     uglify: {
@@ -118,6 +146,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks("grunt-env");
     grunt.loadNpmTasks("grunt-node-inspector");
     grunt.loadNpmTasks("grunt-karma");
+    grunt.loadNpmTasks("grunt-protractor-webdriver");
+    grunt.loadNpmTasks("grunt-protractor-runner");
     grunt.loadNpmTasks("grunt-parallel");
 
     // test

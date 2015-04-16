@@ -12,7 +12,7 @@
                 };
 
                 $scope.errorMessage = null;
-
+                
                 $scope.login = function (credentials) {
                     AuthService.login(credentials)
                     .then(function (res) {

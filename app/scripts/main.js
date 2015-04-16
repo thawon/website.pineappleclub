@@ -2,6 +2,7 @@ require.config({
     paths: {
         /* vendors */
         angular: "vendors/angular.min",
+        angularMocks: "vendors/angular-mocks",
         ngResource: "vendors/angular-resource.min",
         ngCookies: "vendors/angular-cookies.min",
         ngProgress: "vendors/ngProgress.min",
@@ -26,6 +27,10 @@ require.config({
             deps: ["angular"]
         },
         ngProgress: {
+            deps: ["angular"]
+        },
+        angularMocks:
+        {
             deps: ["angular"]
         },
         angularAMD: {

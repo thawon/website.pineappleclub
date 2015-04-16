@@ -20,6 +20,6 @@
                 "$element",
                 "$attrs"
             ]
-        //,beautify: true
+        ,beautify: true
     }
 })
